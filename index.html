@@ -15,26 +15,48 @@
         .container {
             max-width: 768px !important;
         }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            /* height: 2.75rem; */
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            /* margin-top: -1px; */
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            /* padding-top: .75rem;
+            padding-bottom: .75rem; */
+            font-size: .875rem;
+        }
     </style>
 </head>
 
-<body class="container">
+<body class="container bg-white">
     <header class="text-center py-2">
-        <h1 class="h4">Epscavalcante
+        <h1 class="h6">Epscavalcante
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot"
-                viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-dot text-primary" viewBox="0 0 16 16">
                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
             </svg>
 
             dev
         </h1>
     </header>
-    <main class="py-5 mt-5">
+    <main class="py-5">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <img src="https://avatars.githubusercontent.com/u/19554026?v=4" alt=""
-                class="img-fluid rounded-circle img-thumbnail border-dark border-5 mb-4" style="max-width: 250px">
-            <section class="">
+            <section class="order-1">
                 <h1 class="h1 display-5 fw-bold mb-0">Eduardo Cavalcante</h1>
                 <h2 class="h3 fs-2">Software developer</h2>
                 <ul class="list-unstyled">
@@ -70,7 +92,7 @@
                 </ul>
 
                 <div class="d-grid gap-2 d-md-block">
-                    <a href="#" class="btn btn-lg btn-outline-dark">
+                    <a href="#" class="btn btn-lg btn-dark">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-github" viewBox="0 0 16 16">
@@ -82,7 +104,7 @@
 
                     </a>
 
-                    <a href="#" class="btn btn-lg btn-outline-primary">
+                    <a href="#" class="btn btn-lg btn-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-linkedin" viewBox="0 0 16 16">
                             <path
@@ -95,8 +117,67 @@
                 </div>
 
             </section>
+
+            <img src="https://avatars.githubusercontent.com/u/19554026?v=4" alt=""
+                class="img-fluid rounded-circle img-thumbnail border-dark border-5 mb-4 mb-lg-0 order-0"
+                style="max-width: 250px">
         </div>
     </main>
+
+    <aside class="rounded border" style="background-color: #DDD;">
+
+        <div class="container">
+            <div class="nav-scroller">
+                <nav class="nav d-flex justify-content-between py-4">
+                    <span>
+                        <img src="./git.jpg" alt="" width="50">
+                    </span>
+                    <span>
+                        <img src="./html5-e-css3.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./javascript.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./typescript.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./php.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./laravel.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./vuejs.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./reactjs.jpg" alt="" width="50">
+                    </span>
+
+                    
+
+                    <span>
+                        <img src="./nodejs.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./sass.jpg" alt="" width="50">
+                    </span>
+
+                    <span>
+                        <img src="./bootstrap.jpg" alt="" width="50">
+                    </span>
+                </nav>
+
+            </div>
+        </div>
+    </aside>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
